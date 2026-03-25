@@ -525,5 +525,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".navbar__links").classList.toggle("open");
+      }
+
+      function handleForm(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector(".form-btn");
+        const success = document.getElementById("form-success");
+        btn.textContent = "Enviando...";
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.style.display = "none";
+          success.style.display = "block";
+          e.target.reset();
+        }, 1200);
+      }
+    </script>
   </body>
 </html>
