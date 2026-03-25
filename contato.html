@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato — Carine Abreu Horta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo"
+          >Carine Abreu Horta<span>.</span></a
+        >
+        <nav>
+          <ul class="navbar__links">
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li>
+              <a href="contato.html" class="navbar__cta navbar__active"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="navbar__burger" aria-label="Menu" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <section class="section contato">
+      <div class="container contato__inner">
+        <div class="contato__text">
+          <p class="section-label">Contato</p>
+          <h2 class="section-title">Vamos<br /><em>conversar?</em></h2>
+          <p class="contato__desc">
+            Estou aberta a novos projetos, conversas sobre tecnologia ou apenas
+            um bom papo sobre arquitetura de sistemas. Me manda uma mensagem!
+          </p>
+          <ul class="social-links">
+            <li>
+              <a href="mailto:abreucarine.h@gmail.com" class="social-link">
+                <span class="social-link__icon">✉️</span>
+                <span>abreucarine.h@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/carine-horta-7ba754231/"
+                target="_blank"
+                class="social-link"
+              >
+                <span class="social-link__icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/CarineAH"
+                target="_blank"
+                class="social-link"
+              >
+                <span class="social-link__icon">🐙</span>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/abreucarinee/"
+                target="_blank"
+                class="social-link"
+              >
+                <span class="social-link__icon">📸</span>
+                <span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="contato__form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="seu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              rows="5"
+              placeholder="Sua mensagem..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary form-btn">
+            Enviar mensagem
+          </button>
+          <p class="form-success" id="form-success">
+            ✅ Mensagem enviada! Obrigada pelo contato.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__logo">Carine Abreu Horta<span>.</span></span>
+        <p>© 2025 Carine Abreu Horta · Arquiteta de Tecnologia</p>
+        <div class="footer__social">
+          <a href="https://github.com/CarineAH" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/carine-horta-7ba754231/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://www.instagram.com/abreucarinee/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".navbar__links").classList.toggle("open");
+      }
+
+      function handleForm(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector(".form-btn");
+        const success = document.getElementById("form-success");
+        btn.textContent = "Enviando...";
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.style.display = "none";
+          success.style.display = "block";
+          e.target.reset();
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
