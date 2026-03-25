@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carine Abreu Horta — Arquiteta de Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="#home" class="navbar__logo"
+          >Carine Abreu Horta<span>.</span></a
+        >
+        <nav>
+          <ul class="navbar__links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#contato" class="navbar__cta">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="navbar__burger" aria-label="Menu" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="section-label fade-up">Arquiteta de Tecnologia · Globo</p>
+          <h1 class="hero__name fade-up delay-1">
+            Carine<br /><em>Horta.</em>
+          </h1>
+          <p class="hero__desc fade-up delay-2">
+            Profissional de TI com foco em arquitetura de tecnologia, sistemas
+            de informação e agilidade. Apaixonada por construir soluções que
+            conectam pessoas, processos e tecnologia.
+          </p>
+          <div class="hero__actions fade-up delay-3">
+            <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn--ghost">Falar comigo</a>
+          </div>
+        </div>
+        <div class="hero__avatar fade-up delay-4">
+          <div class="hero__avatar-ring">
+            <div class="hero__avatar-img">CAH</div>
+          </div>
+          <div class="hero__badge">📍 Niterói, RJ</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="sobre" class="section sobre">
+      <div class="container">
+        <p class="section-label">Sobre mim</p>
+        <div class="sobre__grid">
+          <div class="sobre__bio">
+            <h2 class="section-title">
+              Tecnologia que<br /><em>conecta pessoas.</em>
+            </h2>
+            <p>
+              Sou Carine Abreu Horta, Arquiteta de Tecnologia na
+              <strong>TV Globo</strong>, a maior rede de televisão do Brasil.
+              Atuo na área de Arquitetura Corporativa, construindo soluções
+              escaláveis e alinhadas aos objetivos de negócio.
+            </p>
+            <p>
+              Minha jornada na tecnologia começou com uma formação sólida em
+              <strong>Sistemas de Informação</strong> na Universidade Veiga de
+              Almeida e uma especialização prática como
+              <strong>Desenvolvedora FullStack</strong>
+              pelo Recode Pro. Com isso, desenvolvi visão técnica de ponta a
+              ponta — da infraestrutura à experiência do usuário.
+            </p>
+            <p>
+              Sou de Niterói, RJ, e acredito que tecnologia bem arquitetada é
+              aquela que as pessoas nem percebem que está lá — só sentem o
+              quanto as coisas funcionam melhor.
+            </p>
+          </div>
+          <div class="sobre__sidebar">
+            <div class="sobre__card">
+              <p class="sobre__card-label">Experiência</p>
+              <ul class="sobre__exp">
+                <li>
+                  <span class="tag">Atual</span>
+                  <strong>Arquiteta de Tecnologia</strong>
+                  <span>
+                    <a
+                      href="https://www.linkedin.com/company/redeglobo/"
+                      target="_blank"
+                      class="exp-link"
+                      >Globo</a
+                    >
+                    · Full-time · Jul 2025 – Presente
+                  </span>
+                </li>
+                <li>
+                  <span class="tag tag--muted">2024–2025</span>
+                  <strong>Estagiária — Arquitetura Corporativa</strong>
+                  <span>
+                    <a
+                      href="https://www.linkedin.com/company/redeglobo/"
+                      target="_blank"
+                      class="exp-link"
+                      >Globo</a
+                    >
+                    · Estágio · 1 ano 3 meses · Híbrido, RJ
+                  </span>
+                </li>
+                <li>
+                  <span class="tag tag--muted">2021</span>
+                  <strong>Estagiária — Banco de Dados</strong>
+                  <span>
+                    <a
+                      href="https://www.linkedin.com/company/elecnor/"
+                      target="_blank"
+                      class="exp-link"
+                      >Elecnor</a
+                    >
+                    · Estágio · ~3 meses · Niterói, RJ
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="sobre__card">
+              <p class="sobre__card-label">Formação</p>
+              <ul class="sobre__exp">
+                <li>
+                  <span class="tag">Em andamento</span>
+                  <strong>Bacharelado em Sistemas de Informação</strong>
+                  <span>
+                    <a
+                      href="https://www.uva.br/"
+                      target="_blank"
+                      class="exp-link"
+                      >Universidade Veiga de Almeida</a
+                    >
+                    · Jul 2022 – Jun 2026
+                  </span>
+                </li>
+                <li>
+                  <span class="tag tag--muted">2021–2022</span>
+                  <strong>Desenvolvedora FullStack</strong>
+                  <span>
+                    <a
+                      href="https://recode.org.br/"
+                      target="_blank"
+                      class="exp-link"
+                      >Recode Pro</a
+                    >
+                    · 540 horas · Set 2021 – Abr 2022
+                  </span>
+                </li>
+                <li>
+                  <span class="tag tag--muted">Ensino Médio</span>
+                  <strong>Ensino Médio Completo</strong>
+                  <span>Colégio São Vicente de Paulo · Niterói, RJ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="sobre__card">
+              <p class="sobre__card-label">Certificações</p>
+              <ul class="sobre__certs">
+                <li>
+                  <div class="cert-title">PSM I — O Scrum Master Eficaz</div>
+                  <div class="cert-meta">
+                    Tlexames · Jan 2023 ·
+                    <a
+                      href="https://www.linkedin.com/in/carine-horta-7ba754231/details/certifications/"
+                      target="_blank"
+                      class="exp-link"
+                      >Ver credencial →</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="cert-title">Gestão Ágil com Scrum Completo</div>
+                  <div class="cert-meta">
+                    Udemy · Mai 2022 ·
+                    <a
+                      href="https://www.udemy.com/certificate/UC-a8f1dda4-dc87-44a4-8ef2-bfc7a82c5541/"
+                      target="_blank"
+                      class="exp-link"
+                      >Ver credencial →</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="cert-title">
+                    Gestão de Projetos e Aplicativos de Impacto
+                  </div>
+                  <div class="cert-meta">
+                    Recode · Mai 2021 ·
+                    <a
+                      href="https://www.linkedin.com/in/carine-horta-7ba754231/details/certifications/"
+                      target="_blank"
+                      class="exp-link"
+                      >Ver credencial →</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="cert-title">
+                    Curso Online Eu ProgrAmo — 6ª Turma
+                  </div>
+                  <div class="cert-meta">PrograMaria · Abr 2021</div>
+                </li>
+                <li>
+                  <div class="cert-title">ProgramAção</div>
+                  <div class="cert-meta">
+                    Recode · Mai 2021 ·
+                    <a
+                      href="https://www.linkedin.com/in/carine-horta-7ba754231/details/certifications/"
+                      target="_blank"
+                      class="exp-link"
+                      >Ver credencial →</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="projetos" class="section projetos">
+      <div class="container">
+        <p class="section-label">Projetos & Portfólio</p>
+        <div class="projetos__header">
+          <h2 class="section-title">O que tenho<br /><em>construído.</em></h2>
+          <a
+            href="https://github.com/CarineAH"
+            target="_blank"
+            class="btn btn--ghost"
+            >Ver no GitHub →</a
+          >
+        </div>
+        <div class="projetos__grid">
+          <a
+            href="https://www.linkedin.com/in/carine-horta-7ba754231/"
+            target="_blank"
+            class="projeto-card"
+          >
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">🏗️</span>
+              <span class="projeto-card__tag">Arquitetura</span>
+            </div>
+            <h3>Arquitetura Corporativa — Globo</h3>
+            <p>
+              Atuação direta no mapeamento e evolução da arquitetura de
+              tecnologia da Globo, maior rede de televisão do Brasil. Envolve
+              análise de sistemas existentes, definição de padrões técnicos e
+              apoio na tomada de decisões estratégicas de TI, garantindo
+              escalabilidade e alinhamento com os objetivos do negócio.
+            </p>
+            <span class="projeto-card__link">Ver no LinkedIn →</span>
+          </a>
+          <a
+            href="https://github.com/CarineAH"
+            target="_blank"
+            class="projeto-card"
+          >
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">💻</span>
+              <span class="projeto-card__tag">FullStack</span>
+            </div>
+            <h3>Desenvolvimento Web FullStack</h3>
+            <p>
+              Projetos desenvolvidos durante a formação intensiva de 540 horas
+              pelo Recode Pro, com foco em desenvolvimento front-end e back-end.
+              Aplicações construídas com HTML, CSS e JavaScript, sempre com
+              atenção à usabilidade e às boas práticas de engenharia de
+              software.
+            </p>
+            <span class="projeto-card__link">Ver no GitHub →</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/elecnor/"
+            target="_blank"
+            class="projeto-card"
+          >
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">🗄️</span>
+              <span class="projeto-card__tag">Banco de Dados</span>
+            </div>
+            <h3>Estágio em Banco de Dados — Elecnor</h3>
+            <p>
+              Experiência prática em banco de dados na Elecnor, empresa
+              multinacional do setor de energia e infraestrutura. Uma imersão
+              nas rotinas de gestão e organização de dados em ambiente
+              corporativo real, contribuindo para a base técnica em persistência
+              e consulta de informações.
+            </p>
+            <span class="projeto-card__link">Ver na Elecnor →</span>
+          </a>
+          <a href="https://recode.org.br/" target="_blank" class="projeto-card">
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">📊</span>
+              <span class="projeto-card__tag">Gestão de Projetos</span>
+            </div>
+            <h3>Gestão de Projetos e Aplicativos de Impacto</h3>
+            <p>
+              Certificação pela Recode voltada para criação e gestão de projetos
+              de tecnologia com impacto social. O programa abordou levantamento
+              de requisitos, prototipação e apresentação de soluções reais para
+              problemas comunitários, unindo pensamento ágil com
+              responsabilidade social.
+            </p>
+            <span class="projeto-card__link">Ver na Recode →</span>
+          </a>
+          <a
+            href="https://programaria.org/"
+            target="_blank"
+            class="projeto-card"
+          >
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">👩‍💻</span>
+              <span class="projeto-card__tag">Diversidade em Tech</span>
+            </div>
+            <h3>Eu ProgrAmo — PrograMaria</h3>
+            <p>
+              Participação na 6ª turma do programa Eu ProgrAmo da PrograMaria,
+              iniciativa que forma mulheres em programação e amplia a
+              representatividade feminina na tecnologia. Uma experiência que
+              fortaleceu habilidades técnicas e a visão sobre diversidade e
+              inclusão no mercado de TI.
+            </p>
+            <span class="projeto-card__link">Ver na PrograMaria →</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carine-horta-7ba754231/details/certifications/"
+            target="_blank"
+            class="projeto-card"
+          >
+            <div class="projeto-card__top">
+              <span class="projeto-card__icon">🔄</span>
+              <span class="projeto-card__tag">Ágil</span>
+            </div>
+            <h3>Gestão Ágil com Scrum</h3>
+            <p>
+              Certificações em Scrum Master (PSM I) e Gestão Ágil pela Udemy e
+              Tlexames, com domínio de cerimônias, papéis e artefatos do
+              framework Scrum. Aplicação prática de metodologias ágeis no dia a
+              dia de projetos de tecnologia, contribuindo para entregas mais
+              rápidas e alinhadas às necessidades do cliente.
+            </p>
+            <span class="projeto-card__link">Ver certificações →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+  </body>
+</html>
